@@ -14,4 +14,9 @@ export class AppController {
   healthCheck(): string {
     return this.appService.healthCheck();
   }
+
+  @Get('/get-coming-soon')
+  async getComingSoon() {
+    return this.appService.getComingSoon();
+  }
 }
